@@ -964,12 +964,13 @@ a {
 
  /* Style for mobilefirst */
 
- @media (max-width: 485px) {
-
+ @media (max-width: 480px) {
+.container {
+  padding: 0px 15px}
   .hero-ul {
    
    flex-direction: column;
-   padding-left: 15px;
+  
 
   }
 .hs {
