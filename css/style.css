@@ -961,3 +961,27 @@ a {
   border-radius: 4px;
   margin: 0 auto;
 }
+
+ /* Style for mobilefirst */
+
+ @media (max-width: 485px) {
+
+  .hero-ul {
+   
+   flex-direction: column;
+   padding-left: 15px;
+
+  }
+.hs {
+  width: 450px;
+  height: 226px;
+
+}
+.hi {
+  width: 450px; 
+  height: 120px;
+}
+.hero-section h5 {
+  text-align: center;
+}
+}
