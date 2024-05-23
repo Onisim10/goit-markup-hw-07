@@ -35,9 +35,9 @@
             </h3>
           </div>
           <div class="about">
-            <ul>
-              <li><a href="index.html">Studio</a></li>
-              <li><a class="active" href="portofoliu.html">Portfolio</a></li>
+            <ul class="header__navigationt">
+              <li><a class="active" href="index.html">Studio</a></li>
+              <li><a href="portofoliu.html">Portfolio</a></li>
               <li><a href="#">Contacts</a></li>
             </ul>
           </div>
@@ -62,7 +62,40 @@
           </ul>
         </div>
       </div>
+      <button class="js-open-menu" aria-expanded="folse">
+        <svg class="icon-open-menu">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+      </button>
     </header>
+     
+     <div class="js-menu-container">
+ <button class="js-close-menu" type="button">X</button>
+  <ul class="menu-container-navigation">
+              <li><a class="active" href="index.html">Studio</a></li>
+              <li><a href="portofoliu.html">Portfolio</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+
+          <ul class="menu-container-info">
+
+            <li class="header__phone" >
+              <a href="tel:+12127724150">+1 212-772-4150</a>
+            </li>
+            <li>
+              <a class="header__mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-container-social">
+            <li class="line"><a href="#">Instagram</a></li>
+            <li class="line"><a href="#">Twitter</a></li>
+            <li class="line"><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedln</a></li>
+          </ul>
+        
+</div>
 
     <!--buttons section-->
 
@@ -83,9 +116,9 @@
               <div class="img-over">
                 <div class="overlay">
                   <p>
-                    Technoduck is a state-of-the-art coronavirus distribution
-                    platform. Companies use this platform for digital espionage
-                    and attacks on competitors' secure servers.
+                    Technoduck is a state-of-the-art coronavirus  <br>distribution
+                    platform. Companies use this <br>platform for digital espionage
+                    and attacks on <br>competitors' secure servers.
                   </p>
                 </div>
 
@@ -101,7 +134,6 @@
                   <p>Poster New Orlean vs Golden Star</p>
                 </div>
                 <img
-                  class="box"
                   src="images/Poster-New-Orlean-vs-Golden-Star.jpg"
                   alt="poster"
                   width="150"
@@ -110,13 +142,13 @@
               <h5>Poster New Orlean vs Golden Star</h5>
               <h6>Design</h6>
             </li>
-            <li>
+            <li class="img-list">
               <div class="img-over">
                 <div class="overlay">
                   <p>Seafood Restaurant</p>
                 </div>
                 <img
-                  class="img-list"
+                  
                   src="images/Seafood-Restaurant.jpg"
                   alt="seafood-restaurant"
                   width="150"
@@ -277,5 +309,8 @@
         </div>
       </div>
     </footer>
+      <script src="./modal.js"></script>
+     
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

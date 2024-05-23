@@ -71,7 +71,7 @@
     </header>
 
     <div class="js-menu-container">
- 
+ <button class="js-close-menu" type="button">X</button>
   <ul class="menu-container-navigation">
               <li><a class="active" href="index.html">Studio</a></li>
               <li><a href="portofoliu.html">Portfolio</a></li>
@@ -80,22 +80,27 @@
 
           <ul class="menu-container-info">
 
-            <li>
-              <a class="header__phone" href="tel:+12127724150">+1 212-772-4150</a>
+            <li class="header__phone" >
+              <a href="tel:+12127724150">+1 212-772-4150</a>
             </li>
             <li>
               <a class="header__mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            
+          </ul>
+          <ul class="menu-container-social">
+            <li class="line"><a href="#">Instagram</a></li>
+            <li class="line"><a href="#">Twitter</a></li>
+            <li class="line"><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedln</a></li>
           </ul>
         
 </div>
 
     <section class="solution">
       <h1 class="solution__title">
-        EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS
+        EFFECTIVE SOLUTIONS <br class="tittle-mobile" />FOR <br class="tittle-desktop" />YOUR BUSINESS
       </h1>
       <button data-modal-open class="button" type="button">
         Request our service
@@ -469,7 +474,7 @@
           </label>
           <label class="modal-form__position">
             Telefon
-            <input type="tel" name="userphone" class="modal-form__input" />
+            <input type="number" name="userphone" class="modal-form__input" />
             <svg>
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
