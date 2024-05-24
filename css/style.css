@@ -262,6 +262,7 @@ a {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
+  color: rgba(117, 117, 117, 1);
 }
 .main h2 {
   font-size: 36px;
@@ -1001,9 +1002,15 @@ a {
 .tittle {
   display: block;
 }
+.text-space-mobile {
+  display: none;
+}
+.text-space-tablet {
+  display: none;
+}
  /* Style for mobilefirst: index */
 
- @media screen and (min-width: 428px) and (max-width: 768px) {
+ @media screen and (min-width: 428px) and (max-width: 767px) {
 
   .logo {
     margin-left: 15px;
@@ -1156,14 +1163,49 @@ padding-bottom: 32px;
       padding: 0px;
       text-align: center;
 }
+[data-modal] {
+  width: 85%;
+  height: 130%;
+}
 [data-modal-content] {
-          width: 450px;
-            height: 550px;
+          width: 410px;
+            height: 650px;
             top: 48%;
             left: 48%;
-            margin: 93px 15px 94px 15px;
+           
+            padding-right: 0px;
+           
 }
+.modal-form {
+  width: 370px;
+}
+.modal-form__position input {
+  width: 340px;
+  height: 40px;
 
+}
+.modal-form__comments {
+  width: 358px;
+}
+.modal-title {
+  width: 370px;
+}
+.modal-form__checked {
+  width: 370px;
+  height: 15px;
+  font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    display: flex;
+            justify-content: flex-start
+  
+}
+.modal-form__btn {
+  margin-top: 30px;
+}
 .container {
   padding: 0px;
 }
@@ -1201,7 +1243,7 @@ padding-bottom: 32px;
 .text-desktop {
   display: none;
 }
-.text-media {
+.text-space-mobile {
   display: initial;
 }
 .what-we-do {
@@ -1344,16 +1386,208 @@ display: flex;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-.img-over {
-  position: sticky;
+.text-space-tablet {
+  display: none;
+}
+ }
+
+ /* Style for tablet: index */
+
+ @media screen and (min-width: 768px) and (max-width: 1158px) {
+  body {
+    width: 768px;
+  }
+  .container {
+    padding: 0px;
+    margin: 0px;
+  }
+  .header {
+    width: 768px;
+    padding: 0px;
+  }
+  .header__navigation {
+    width: 590px;
+  }
+  .about {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 93px;
+  }
+  .container {
+    padding-right: 0px;
+      padding-left: 0px;
+      margin-left: 15px;
+    }
+    .header__info li {
+     width: 160px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.06px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+.tablet {
+  width: 12px;
+}
+.header__info {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.solution {
+    width: 768px;
+    height: 400px;
+    background-position: 50%;
+   gap: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.solution__title {
+  width: 360px;
+  height: 84px;
+padding: 0px;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+}
+.button {
+  margin: 0px;
+}
+
+.tittle-desktop {
+  display: none;
+}
+.hero-section {
+  width: 100%;
+  padding: 0px;
+  margin-top: 60px;
+}
+
+.hero-ul {
+  width: 100%;
+}
+.hs {
+  width: 354px;
+  height: 251px;
+}
+.hi {
+  width: 100%;
+}
+.hero-section p {
+  width: 100%;
+  height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.hero-section .hero-ul {
+  flex-wrap: wrap;
+}
+.text-desktop {
+  display: none;
+}
+
+.text-space-tablet {
+  display: initial;
+}
+
+.what-we-do {
+  display: none;
+}
+
+.the-team {
+  height: 1225px;
+  width: 100%;
+      margin-top: 40%;
+      padding-top: 60px;
+}
+.the-team img {
+  width: 354px;
+  height: 374px;
+}
+.team-list {
+  flex-wrap: wrap;
+
+}
+.team-work {
+  width: 354px;
+  height: 536px;
+}
+.tittle {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.costumers {
+  margin-top: 60px;
+  padding: 0px;
+  width: 100%;
+  height: 277px;
+}
+.all-costumers {
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.costumers-svg {
+  width: 226px;
+  height: 92px;
+}
+
+.footer {
+ width: 100%;
+height: 404px;
+  margin-top: 60px;
+}
+.footer .container {
+  
+  flex-wrap: wrap;
+}
+.footer1 {
+  margin-left: 76px;
+      width: 232px;
+        text-align: center;
+      }
+
+.footer__adr {
+      width: 200px;
+        height: 20px;
+      }
+.footer2 {
+  padding: 0px;
+  margin-left: 100px;
+      text-align: center;
+}
+.footer3 {
+
+  width: 450px;
+  height: 156px;
+  padding: 0;
+}
+.subscribe-title {
+ 
+  text-align: center;
+}
+.test {
+     
+      flex-wrap: wrap;
+        justify-content: center;
 }
 
 }
 
 
 
+ .js-open-menu {
+   display: none;
+ }
 
 
+ }
 
 
 
