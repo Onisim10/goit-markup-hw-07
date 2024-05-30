@@ -1008,7 +1008,7 @@ a {
 
 /* Style for mobilefirst: index */
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .js-open-menu {
     display: initial;
   }
